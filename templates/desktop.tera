@@ -13,7 +13,7 @@ wallpapers:
 ---
 name: Catppuccin {{ flavor.name }}
 shortname: ctp_{{ flavor.identifier }}
-dark: {{ flavor.dark | as_str }}
+dark: {{ flavor.dark }}
 wallpaper: t.me/bg/{{ wallpapers[flavor.identifier] }} // link to cloud wallpaper
 
 // Palette

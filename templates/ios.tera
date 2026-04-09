@@ -15,7 +15,7 @@ whiskers:
 
 name: Catppuccin {{ flavor.name }}
 shortname: ctp_{{ flavor.identifier }}
-dark: {{ flavor.dark | as_str }}
+dark: {{ flavor.dark }}
 intro_statusBar: {{ status_bar }}
 intro_primaryText: {{ text.hex }}
 intro_accentText: {{ green.hex }}

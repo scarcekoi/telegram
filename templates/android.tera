@@ -8,7 +8,7 @@ whiskers:
 ---
 name: Catppuccin {{ flavor.name }}
 shortname: ctp_{{ flavor.identifier }}
-dark: {{ flavor.dark | as_str }}
+dark: {{ flavor.dark }}
 actionBarActionModeDefault: {{ base.hex }}
 actionBarActionModeDefaultIcon: {{ overlay0.hex }}
 actionBarActionModeDefaultSelector: {{ surface1.hex }}
