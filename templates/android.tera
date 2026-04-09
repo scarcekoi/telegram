@@ -21,8 +21,8 @@ actionBarDefaultArchivedSelector: #{{ overlay2.hex }}
 actionBarDefaultArchivedTitle: #{{ text.hex }}
 actionBarDefaultIcon: #{{ subtext0.hex }}
 actionBarDefaultSearch: #{{ subtext0.hex }}
-actionBarDefaultSearchArchivedPlaceholder: #{{ crust | mod(opacity=0.5) | get(key="hex") }}
-actionBarDefaultSearchPlaceholder: #{{ crust | mod(opacity=0.5) | get(key="hex") }}
+actionBarDefaultSearchArchivedPlaceholder: #{{ crust | mod(opacity=0.5) | hex }}
+actionBarDefaultSearchPlaceholder: #{{ crust | mod(opacity=0.5) | hex }}
 actionBarDefaultSelector: #{{ overlay2.hex }}
 actionBarDefaultSubmenuBackground: #{{ base.hex }}
 actionBarDefaultSubmenuItem: #{{ text.hex }}
@@ -123,7 +123,7 @@ chat_goDownButtonCounter: #{{ base.hex }}
 chat_goDownButtonCounterBackground: #{{ green.hex }}
 chat_goDownButtonIcon: #{{ subtext0.hex }}
 chat_goDownButtonShadow: #000000
-chat_inAudioCacheSeekbar: #{{ base | mod(opacity=0.25) | get(key="hex") }}
+chat_inAudioCacheSeekbar: #{{ base | mod(opacity=0.25) | hex }}
 chat_inAudioDurationSelectedText: #{{ text.hex }}
 chat_inAudioDurationText: #{{ subtext0.hex }}
 chat_inAudioPerfomerSelectedText: #{{ text.hex }}
@@ -225,7 +225,7 @@ chat_messagePanelVoiceShadow: #0000000D
 chat_messageTextIn: #{{ text.hex }}
 chat_messageTextOut: #{{ text.hex }}
 chat_muteIcon: #{{ overlay0.hex }}
-chat_outAudioCacheSeekbar: #{{ base | mod(opacity=0.25) | get(key="hex") }}
+chat_outAudioCacheSeekbar: #{{ base | mod(opacity=0.25) | hex }}
 chat_outAudioDurationSelectedText: #{{ text.hex }}
 chat_outAudioDurationText: #{{ subtext0.hex }}
 chat_outAudioPerfomerSelectedText: #{{ text.hex }}

@@ -25,7 +25,7 @@ accent = #{{ blue.hex }}
 redUI = #{{ red.hex }}
 greenUI = #{{ green.hex }}
 blackTransparent = #{{ crust.hex }}
-grayTransparent = #{{ surface0 | mod(opacity=0.6) | get(key="hex") }}
+grayTransparent = #{{ surface0 | mod(opacity=0.6) | hex }}
 grayUI = #{{ base.hex }}
 darkGrayText = #{{ subtext0.hex }}
 accentSelect = #{{ sky.hex }}
@@ -57,19 +57,19 @@ grayTextBubble_outgoing = #{{ text.hex }}
 grayIconBubble_incoming = #{{ subtext1.hex }}
 grayIconBubble_outgoing = #{{ subtext1.hex }}
 accentIconBubble_incoming = #{{ subtext1.hex }}
-accentIconBubble_outgoing = #{{ text | mod(opacity=0.8) | get(key="hex") }}
+accentIconBubble_outgoing = #{{ text | mod(opacity=0.8) | hex }}
 linkBubble_incoming = #{{ sapphire.hex }}
 //sapphirelinkBubble_outgoing = #{{ sapphire.hex }}
 //sapphire #{{ text.hex }}_incoming = #{{ text.hex }} #{{ text.hex }}_outgoing = #{{ text.hex }}
 selectMessageBubble = #{{ surface1.hex }}
-fileActivityBackground = #{{ blue | mod(opacity=0.8) | get(key="hex") }}
+fileActivityBackground = #{{ blue | mod(opacity=0.8) | hex }}
 fileActivityForeground = #{{ text.hex }}
 fileActivityBackgroundBubble_incoming = #{{ subtext1.hex }}
 fileActivityBackgroundBubble_outgoing = #{{ text.hex }}
 fileActivityForegroundBubble_incoming = #{{ surface1.hex }}
 fileActivityForegroundBubble_outgoing = #{{ sky.hex }}
-waveformBackground = #{{ subtext1 | mod(opacity=0.7) | get(key="hex") }}
-waveformForeground = #{{ blue | mod(opacity=0.8) | get(key="hex") }}
+waveformBackground = #{{ subtext1 | mod(opacity=0.7) | hex }}
+waveformForeground = #{{ blue | mod(opacity=0.8) | hex }}
 waveformBackgroundBubble_incoming = #{{ subtext1.hex }}
 waveformBackgroundBubble_outgoing = #{{ subtext1.hex }}
 waveformForegroundBubble_incoming = #{{ text.hex }}

@@ -9,7 +9,7 @@ whiskers:
 {%- set status_bar = if(cond=flavor.dark, t="white", f="black") -%}
 
 {%- macro half(color) -%}
-{{ color | mod(opacity=0.5) | get(key="hex") }}
+{{ color | mod(opacity=0.5) | hex }}
 {%- endmacro -%}
 
 name: Catppuccin {{ flavor.name }}
