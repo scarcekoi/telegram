@@ -109,7 +109,7 @@ list_freeInputField_primary: {{ text.hex }}
 list_freeInputField_control: {{ self::half(color=text) }}
 list_mediaPlaceholder: {{ base.hex }}
 list_scrollIndicator: {{ self::half(color=text) }}
-list_pageIndicatorInactive: {{ text.hex }}66
+list_pageIndicatorInactive: {{ text | mod(opacity=0.4) | hex }}
 list_inputClearButton: {{ subtext1.hex }}
 list_itemBarChart_color1: {{ green.hex }}
 list_itemBarChart_color2: {{ self::half(color=text) }}
@@ -134,13 +134,13 @@ chatList_messageText: {{ self::half(color=text) }}
 chatList_messageHighlightedText: {{ text.hex }}
 chatList_messageDraftText: {{ red.hex }}
 chatList_checkmark: {{ green.hex }}
-chatList_pendingIndicator: {{ text.hex }}66
+chatList_pendingIndicator: {{ text| mod(opacity=0.4) | hex }}
 chatList_failedFill: {{ red.hex }}
 chatList_failedFg: {{ text.hex }}
-chatList_muteIcon: {{ text.hex }}66
+chatList_muteIcon: {{ text| mod(opacity=0.4) | hex }}
 chatList_unreadBadgeActiveBg: {{ green.hex }}
 chatList_unreadBadgeActiveText: {{ crust.hex }}
-chatList_unreadBadgeInactiveBg: {{ text.hex }}66
+chatList_unreadBadgeInactiveBg: {{ text| mod(opacity=0.4) | hex }}
 chatList_unreadBadgeInactiveText: {{ base.hex }}
 chatList_reactionBadgeActiveBg: {{ red.hex }}
 chatList_pinnedBadge: {{ self::half(color=text) }}
@@ -163,22 +163,22 @@ chat_message_incoming_bubble_withWp_bg: {{ surface0.hex }}
 chat_message_incoming_bubble_withWp_gradientBg: {{ surface0.hex }}
 chat_message_incoming_bubble_withWp_highlightedBg: {{ surface0.hex }}
 chat_message_incoming_bubble_withWp_stroke: {{ surface0.hex }}
-chat_message_incoming_bubble_withWp_reactionInactiveBg: {{ text.hex }}11
+chat_message_incoming_bubble_withWp_reactionInactiveBg: {{ text | mod(opacity=0.066) | hex }}
 chat_message_incoming_bubble_withWp_reactionInactiveFg: {{ text.hex }}
 chat_message_incoming_bubble_withWp_reactionActiveBg: {{ green.hex }}
 chat_message_incoming_bubble_withWp_reactionActiveFg: {{ text.hex }}
-chat_message_incoming_bubble_withWp_reactionInactiveMediaPlaceholder: {{ crust.hex }}19
-chat_message_incoming_bubble_withWp_reactionActiveMediaPlaceholder: {{ crust.hex }}19
+chat_message_incoming_bubble_withWp_reactionInactiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
+chat_message_incoming_bubble_withWp_reactionActiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
 chat_message_incoming_bubble_withoutWp_bg: {{ surface0.hex }}
 chat_message_incoming_bubble_withoutWp_gradientBg: {{ surface0.hex }}
 chat_message_incoming_bubble_withoutWp_highlightedBg: {{ surface0.hex }}
 chat_message_incoming_bubble_withoutWp_stroke: {{ surface0.hex }}
-chat_message_incoming_bubble_withoutWp_reactionInactiveBg: {{ text.hex }}11
+chat_message_incoming_bubble_withoutWp_reactionInactiveBg: {{ text | mod(opacity=0.066) | hex }}
 chat_message_incoming_bubble_withoutWp_reactionInactiveFg: {{ text.hex }}
 chat_message_incoming_bubble_withoutWp_reactionActiveBg: {{ green.hex }}
 chat_message_incoming_bubble_withoutWp_reactionActiveFg: {{ text.hex }}
-chat_message_incoming_bubble_withoutWp_reactionInactiveMediaPlaceholder: {{ crust.hex }}19
-chat_message_incoming_bubble_withoutWp_reactionActiveMediaPlaceholder: {{ crust.hex }}19
+chat_message_incoming_bubble_withoutWp_reactionInactiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
+chat_message_incoming_bubble_withoutWp_reactionActiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
 chat_message_incoming_primaryText: {{ text.hex }}
 chat_message_incoming_secondaryText: {{ self::half(color=text) }}
 chat_message_incoming_linkText: {{ green.hex }}
@@ -197,7 +197,7 @@ chat_message_incoming_fileDuration: {{ self::half(color=text) }}
 chat_message_incoming_mediaPlaceholder: {{ base.hex }}
 chat_message_incoming_polls_radioButton: {{ surface2.hex }}
 chat_message_incoming_polls_radioProgress: {{ green.hex }}
-chat_message_incoming_polls_highlight: {{ green.hex }}1E
+chat_message_incoming_polls_highlight: {{ green | mod(opacity=0.117) | hex }}
 chat_message_incoming_polls_separator: {{ crust.hex }}
 chat_message_incoming_polls_bar: {{ green.hex }}
 chat_message_incoming_polls_barIconForeground: {{ text.hex }}
@@ -205,32 +205,32 @@ chat_message_incoming_polls_barPositive: {{ green.hex }}
 chat_message_incoming_polls_barNegative: {{ red.hex }}
 chat_message_incoming_actionButtonsBg_withWp: {{ self::half(color=base) }}
 chat_message_incoming_actionButtonsBg_withoutWp: {{ self::half(color=base) }}
-chat_message_incoming_actionButtonsStroke_withWp: {{ overlay0.hex }}26
-chat_message_incoming_actionButtonsStroke_withoutWp: {{ overlay0.hex }}26
+chat_message_incoming_actionButtonsStroke_withWp: {{ overlay0 | mod(opacity=0.149) | hex }}
+chat_message_incoming_actionButtonsStroke_withoutWp: {{ overlay0 | mod(opacity=0.149) | hex }}
 chat_message_incoming_actionButtonsText_withWp: {{ text.hex }}
 chat_message_incoming_actionButtonsText_withoutWp: {{ text.hex }}
-chat_message_incoming_textSelection: {{ green.hex }}33
+chat_message_incoming_textSelection: {{ green | mod(opacity=0.2) | hex }}
 chat_message_incoming_textSelectionKnob: {{ green.hex }}
 chat_message_outgoing_bubble_withWp_bg: {{ green.hex }}
 chat_message_outgoing_bubble_withWp_gradientBg: {{ green.hex }}
 chat_message_outgoing_bubble_withWp_highlightedBg: {{ green.hex }}
 chat_message_outgoing_bubble_withWp_stroke: clear
-chat_message_outgoing_bubble_withWp_reactionInactiveBg: {{ text.hex }}19
+chat_message_outgoing_bubble_withWp_reactionInactiveBg: {{ text | mod(opacity=0.098) | hex }}
 chat_message_outgoing_bubble_withWp_reactionInactiveFg: {{ text.hex }}
 chat_message_outgoing_bubble_withWp_reactionActiveBg: {{ text.hex }}
 chat_message_outgoing_bubble_withWp_reactionActiveFg: clear
-chat_message_outgoing_bubble_withWp_reactionInactiveMediaPlaceholder: {{ crust.hex }}19
-chat_message_outgoing_bubble_withWp_reactionActiveMediaPlaceholder: {{ crust.hex }}19
+chat_message_outgoing_bubble_withWp_reactionInactiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
+chat_message_outgoing_bubble_withWp_reactionActiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
 chat_message_outgoing_bubble_withoutWp_bg: {{ green.hex }}
 chat_message_outgoing_bubble_withoutWp_gradientBg: {{ green.hex }}
 chat_message_outgoing_bubble_withoutWp_highlightedBg: {{ green.hex }}
 chat_message_outgoing_bubble_withoutWp_stroke: clear
-chat_message_outgoing_bubble_withoutWp_reactionInactiveBg: {{ text.hex }}19
+chat_message_outgoing_bubble_withoutWp_reactionInactiveBg: {{ text | mod(opacity=0.098) | hex }}
 chat_message_outgoing_bubble_withoutWp_reactionInactiveFg: {{ text.hex }}
 chat_message_outgoing_bubble_withoutWp_reactionActiveBg: {{ text.hex }}
 chat_message_outgoing_bubble_withoutWp_reactionActiveFg: clear
-chat_message_outgoing_bubble_withoutWp_reactionInactiveMediaPlaceholder: {{ crust.hex }}19
-chat_message_outgoing_bubble_withoutWp_reactionActiveMediaPlaceholder: {{ crust.hex }}19
+chat_message_outgoing_bubble_withoutWp_reactionInactiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
+chat_message_outgoing_bubble_withoutWp_reactionActiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
 chat_message_outgoing_primaryText: {{ crust.hex }}
 chat_message_outgoing_secondaryText: {{ self::half(color=crust) }}
 chat_message_outgoing_linkText: {{ crust.hex }}
@@ -249,7 +249,7 @@ chat_message_outgoing_fileDuration: {{ self::half(color=crust) }}
 chat_message_outgoing_mediaPlaceholder: {{ surface2.hex }}
 chat_message_outgoing_polls_radioButton: {{ crust.hex }}
 chat_message_outgoing_polls_radioProgress: {{ crust.hex }}
-chat_message_outgoing_polls_highlight: {{ crust.hex }}1E
+chat_message_outgoing_polls_highlight: {{ crust | mod(opacity=0.117) | hex }}
 chat_message_outgoing_polls_separator: {{ crust.hex }}
 chat_message_outgoing_polls_bar: {{ crust.hex }}
 chat_message_outgoing_polls_barIconForeground: clear
@@ -257,67 +257,67 @@ chat_message_outgoing_polls_barPositive: {{ text.hex }}
 chat_message_outgoing_polls_barNegative: {{ text.hex }}
 chat_message_outgoing_actionButtonsBg_withWp: {{ self::half(color=base) }}
 chat_message_outgoing_actionButtonsBg_withoutWp: {{ self::half(color=base) }}
-chat_message_outgoing_actionButtonsStroke_withWp: {{ overlay0.hex }}26
-chat_message_outgoing_actionButtonsStroke_withoutWp: {{ overlay0.hex }}26
+chat_message_outgoing_actionButtonsStroke_withWp: {{ overlay0 | mod(opacity=0.149) | hex }}
+chat_message_outgoing_actionButtonsStroke_withoutWp: {{ overlay0 | mod(opacity=0.149) | hex }}
 chat_message_outgoing_actionButtonsText_withWp: {{ text.hex }}
 chat_message_outgoing_actionButtonsText_withoutWp: {{ text.hex }}
-chat_message_outgoing_textSelection: {{ text.hex }}33
+chat_message_outgoing_textSelection: {{ text | mod(opacity=0.2) | hex }}
 chat_message_outgoing_textSelectionKnob: {{ text.hex }}
 chat_message_freeform_withWp_bg: {{ surface0.hex }}
 chat_message_freeform_withWp_gradientBg: {{ surface0.hex }}
 chat_message_freeform_withWp_highlightedBg: {{ surface0.hex }}
 chat_message_freeform_withWp_stroke: {{ surface0.hex }}
-chat_message_freeform_withWp_reactionInactiveBg: {{ surface0.hex }}E5
+chat_message_freeform_withWp_reactionInactiveBg: {{ surface0 | mod(opacity=0.898) | hex }}
 chat_message_freeform_withWp_reactionInactiveFg: {{ text.hex }}
 chat_message_freeform_withWp_reactionActiveBg: {{ blue.hex }}
 chat_message_freeform_withWp_reactionActiveFg: {{ text.hex }}
-chat_message_freeform_withWp_reactionInactiveMediaPlaceholder: {{ crust.hex }}19
-chat_message_freeform_withWp_reactionActiveMediaPlaceholder: {{ crust.hex }}19
+chat_message_freeform_withWp_reactionInactiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
+chat_message_freeform_withWp_reactionActiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
 chat_message_freeform_withoutWp_bg: {{ surface0.hex }}
 chat_message_freeform_withoutWp_gradientBg: {{ surface0.hex }}
 chat_message_freeform_withoutWp_highlightedBg: {{ surface0.hex }}
 chat_message_freeform_withoutWp_stroke: {{ surface0.hex }}
-chat_message_freeform_withoutWp_reactionInactiveBg: {{ surface0.hex }}E5
+chat_message_freeform_withoutWp_reactionInactiveBg: {{ surface0 | mod(opacity=0.898) | hex }}
 chat_message_freeform_withoutWp_reactionInactiveFg: {{ text.hex }}
 chat_message_freeform_withoutWp_reactionActiveBg: {{ blue.hex }}
 chat_message_freeform_withoutWp_reactionActiveFg: {{ text.hex }}
-chat_message_freeform_withoutWp_reactionInactiveMediaPlaceholder: {{ crust.hex }}19
-chat_message_freeform_withoutWp_reactionActiveMediaPlaceholder: {{ crust.hex }}19
+chat_message_freeform_withoutWp_reactionInactiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
+chat_message_freeform_withoutWp_reactionActiveMediaPlaceholder: {{ crust | mod(opacity=0.098) | hex }}
 chat_message_infoPrimaryText: {{ text.hex }}
 chat_message_infoLinkText: {{ green.hex }}
 chat_message_outgoingCheck: {{ self::half(color=crust) }}
-chat_message_mediaDateAndStatusBg: {{ crust.hex }}4C
+chat_message_mediaDateAndStatusBg: {{ crust | mod(opacity=0.298) | hex }}
 chat_message_mediaDateAndStatusText: {{ text.hex }}
 chat_message_shareButtonBg_withWp: {{ self::half(color=base) }}
 chat_message_shareButtonBg_withoutWp: {{ self::half(color=base) }}
-chat_message_shareButtonStroke_withWp: {{ overlay0.hex }}26
-chat_message_shareButtonStroke_withoutWp: {{ overlay0.hex }}26
+chat_message_shareButtonStroke_withWp: {{ overlay0 | mod(opacity=0.149) | hex }}
+chat_message_shareButtonStroke_withoutWp: {{ overlay0 | mod(opacity=0.149) | hex }}
 chat_message_shareButtonFg_withWp: {{ overlay2.hex }}
 chat_message_shareButtonFg_withoutWp: {{ overlay2.hex }}
-chat_message_mediaOverlayControl_bg: {{ crust.hex }}99
+chat_message_mediaOverlayControl_bg: {{ crust | mod(opacity=0.6) | hex }}
 chat_message_mediaOverlayControl_fg: {{ text.hex }}
 chat_message_selectionControl_bg: {{ green.hex }}
 chat_message_selectionControl_stroke: {{ text.hex }}
 chat_message_selectionControl_fg: {{ text.hex }}
 chat_message_deliveryFailed_bg: {{ red.hex }}
 chat_message_deliveryFailed_fg: {{ text.hex }}
-chat_message_mediaHighlightOverlay: {{ text.hex }}99
+chat_message_mediaHighlightOverlay: {{ text | mod(opacity=0.6) | hex }}
 chat_message_stickerPlaceholder_withWp: {{ self::half(color=surface0) }}
 chat_message_stickerPlaceholder_withoutWp: {{ self::half(color=surface0) }}
-chat_message_stickerPlaceholderShimmer_withWp: {{ text.hex }}0C
-chat_message_stickerPlaceholderShimmer_withoutWp: {{ text.hex }}0C
+chat_message_stickerPlaceholderShimmer_withWp: {{ text | mod(opacity=0.047) | hex }}
+chat_message_stickerPlaceholderShimmer_withoutWp: {{ text | mod(opacity=0.047) | hex }}
 chat_serviceMessage_components_withDefaultWp_bg: {{ base.hex }}
 chat_serviceMessage_components_withDefaultWp_primaryText: {{ text.hex }}
-chat_serviceMessage_components_withDefaultWp_linkHighlight: {{ text.hex }}1E
+chat_serviceMessage_components_withDefaultWp_linkHighlight: {{ text | mod(opacity=0.117) | hex }}
 chat_serviceMessage_components_withDefaultWp_scam: {{ red.hex }}
-chat_serviceMessage_components_withDefaultWp_dateFillStatic: {{ base.hex }}99
-chat_serviceMessage_components_withDefaultWp_dateFillFloat: {{ base.hex }}33
+chat_serviceMessage_components_withDefaultWp_dateFillStatic: {{ base | mod(opacity=0.6) | hex }}
+chat_serviceMessage_components_withDefaultWp_dateFillFloat: {{ base | mod(opacity=0.2) | hex }}
 chat_serviceMessage_components_withCustomWp_bg: {{ base.hex }}
 chat_serviceMessage_components_withCustomWp_primaryText: {{ text.hex }}
-chat_serviceMessage_components_withCustomWp_linkHighlight: {{ text.hex }}1E
+chat_serviceMessage_components_withCustomWp_linkHighlight: {{ text | mod(opacity=0.117) | hex }}
 chat_serviceMessage_components_withCustomWp_scam: {{ red.hex }}
-chat_serviceMessage_components_withCustomWp_dateFillStatic: {{ base.hex }}99
-chat_serviceMessage_components_withCustomWp_dateFillFloat: {{ base.hex }}33
+chat_serviceMessage_components_withCustomWp_dateFillStatic: {{ base | mod(opacity=0.6) | hex }}
+chat_serviceMessage_components_withCustomWp_dateFillFloat: {{ base | mod(opacity=0.2) | hex }}
 chat_serviceMessage_unreadBarBg: {{ surface0.hex }}
 chat_serviceMessage_unreadBarStroke: {{ surface0.hex }}
 chat_serviceMessage_unreadBarText: {{ text.hex }}
@@ -331,26 +331,26 @@ chat_inputPanel_panelControlDisabled: {{ self::half(color=overlay1) }}
 chat_inputPanel_panelControlDestructive: {{ red.hex }}
 chat_inputPanel_inputBg: {{ base.hex }}
 chat_inputPanel_inputStroke: {{ base.hex }}
-chat_inputPanel_inputPlaceholder: {{ text.hex }}66
+chat_inputPanel_inputPlaceholder: {{ text | mod(opacity=0.4) | hex }}
 chat_inputPanel_inputText: {{ text.hex }}
-chat_inputPanel_inputControl: {{ text.hex }}66
+chat_inputPanel_inputControl: {{ text | mod(opacity=0.4) | hex }}
 chat_inputPanel_actionControlBg: {{ green.hex }}
 chat_inputPanel_actionControlFg: {{ crust.hex }}
 chat_inputPanel_primaryText: {{ text.hex }}
 chat_inputPanel_secondaryText: {{ self::half(color=text) }}
 chat_inputPanel_mediaRecordDot: {{ green.hex }}
 chat_inputPanel_mediaRecordControl_button: {{ green.hex }}
-chat_inputPanel_mediaRecordControl_micLevel: {{ green.hex }}33
+chat_inputPanel_mediaRecordControl_micLevel: {{ green | mod(opacity=0.2) | hex }}
 chat_inputPanel_mediaRecordControl_activeIcon: {{ text.hex }}
 chat_inputMediaPanel_panelSeparator: {{ surface0.hex }}
 chat_inputMediaPanel_panelIcon: {{ self::half(color=text) }}
-chat_inputMediaPanel_panelHighlightedIconBg: {{ text.hex }}1F
-chat_inputMediaPanel_panelHighlightedIcon: {{ text.hex }}AC
+chat_inputMediaPanel_panelHighlightedIconBg: {{ text | mod(opacity=0.12) | hex }}
+chat_inputMediaPanel_panelHighlightedIcon: {{ text | mod(opacity=0.674) | hex }}
 chat_inputMediaPanel_panelContentVibrantOverlay: {{ self::half(color=text) }}
-chat_inputMediaPanel_panelContentControlVibrantOverlay: {{ text.hex }}4C
-chat_inputMediaPanel_panelContentControlVibrantSelection: {{ text.hex }}19
-chat_inputMediaPanel_panelContentControlOpaqueOverlay: {{ text.hex }}4C
-chat_inputMediaPanel_panelContentControlOpaqueSelection: {{ text.hex }}4C
+chat_inputMediaPanel_panelContentControlVibrantOverlay: {{ text | mod(opacity=0.298) | hex }}
+chat_inputMediaPanel_panelContentControlVibrantSelection: {{ text | mod(opacity=0.098) | hex }}
+chat_inputMediaPanel_panelContentControlOpaqueOverlay: {{ text | mod(opacity=0.298) | hex }}
+chat_inputMediaPanel_panelContentControlOpaqueSelection: {{ text | mod(opacity=0.298) | hex }}
 chat_inputMediaPanel_stickersBg: {{ base.hex }}
 chat_inputMediaPanel_stickersSectionText: {{ self::half(color=text) }}
 chat_inputMediaPanel_stickersSearchBg: {{ overlay0.hex }}
@@ -358,12 +358,12 @@ chat_inputMediaPanel_stickersSearchPlaceholder: {{ overlay0.hex }}
 chat_inputMediaPanel_stickersSearchPrimary: {{ text.hex }}
 chat_inputMediaPanel_stickersSearchControl: {{ overlay0.hex }}
 chat_inputMediaPanel_gifsBg: {{ base.hex }}
-chat_inputMediaPanel_bg: {{ base.hex }}BF
+chat_inputMediaPanel_bg: {{ base | mod(opacity=0.749) | hex }}
 chat_inputButtonPanel_panelBg: {{ crust.hex }}
 chat_inputButtonPanel_panelSeparator: {{ surface0.hex }}
 chat_inputButtonPanel_buttonBg: {{ surface1.hex }}
 chat_inputButtonPanel_buttonStroke: {{ crust.hex }}
-chat_inputButtonPanel_buttonHighlightedBg: {{ surface1.hex }}B2
+chat_inputButtonPanel_buttonHighlightedBg: {{ surface1 | mod(opacity=0.698) | hex }}
 chat_inputButtonPanel_buttonHighlightedStroke: {{ crust.hex }}
 chat_inputButtonPanel_buttonText: {{ text.hex }}
 chat_historyNav_bg: {{ surface0.hex }}
@@ -375,9 +375,9 @@ chat_historyNav_badgeText: {{ text.hex }}
 actionSheet_dim: {{ self::half(color=crust) }}
 actionSheet_bgType: dark
 actionSheet_opaqueItemBg: {{ surface0.hex }}
-actionSheet_itemBg: {{ surface0.hex }}CC
+actionSheet_itemBg: {{ surface0 | mod(opacity=0.8) | hex }}
 actionSheet_opaqueItemHighlightedBg: {{ surface0.hex }}
-actionSheet_itemHighlightedBg: {{ surface0.hex }}33
+actionSheet_itemHighlightedBg: {{ surface0 | mod(opacity=0.2) | hex }}
 actionSheet_opaqueItemSeparator: {{ base.hex }}
 actionSheet_standardActionText: {{ green.hex }}
 actionSheet_destructiveActionText: {{ red.hex }}
@@ -392,12 +392,12 @@ actionSheet_inputPlaceholder: {{ subtext1.hex }}
 actionSheet_inputText: {{ text.hex }}
 actionSheet_inputClearButton: {{ subtext1.hex }}
 actionSheet_checkContent: {{ crust.hex }}
-contextMenu_dim: {{ crust.hex }}99
-contextMenu_background: {{ surface0.hex }}C6
-contextMenu_itemSeparator: {{ text.hex }}26
-contextMenu_sectionSeparator: {{ crust.hex }}33
-contextMenu_itemBg: {{ crust.hex }}00
-contextMenu_itemHighlightedBg: {{ text.hex }}26
+contextMenu_dim: {{ crust | mod(opacity=0.6) | hex }}
+contextMenu_background: {{ surface0 | mod(opacity=0.776) | hex }}
+contextMenu_itemSeparator: {{ text | mod(opacity=0.149) | hex }}
+contextMenu_sectionSeparator: {{ crust | mod(opacity=0.2) | hex }}
+contextMenu_itemBg: {{ crust | mod(opacity=0.0) | hex }}
+contextMenu_itemHighlightedBg: {{ text | mod(opacity=0.149) | hex }}
 contextMenu_primary: {{ text.hex }}
 contextMenu_secondary: {{ self::half(color=text) }}
 contextMenu_destructive: {{ red.hex }}
@@ -408,10 +408,10 @@ notification_expanded_navBar_background: {{ surface0.hex }}
 notification_expanded_navBar_primaryText: {{ text.hex }}
 notification_expanded_navBar_control: {{ green.hex }}
 notification_expanded_navBar_separator: {{ crust.hex }}
-chart_labels: {{ subtext0.hex }}99
-chart_helperLines: {{ overlay1.hex }}59
-chart_strongLines: {{ overlay1.hex }}59
-chart_barStrongLines: {{ subtext0.hex }}72
+chart_labels: {{ subtext0 | mod(opacity=0.6) | hex }}
+chart_helperLines: {{ overlay1 | mod(opacity=0.349) | hex }}
+chart_strongLines: {{ overlay1 | mod(opacity=0.349) | hex }}
+chart_barStrongLines: {{ subtext0 | mod(opacity=0.447) | hex }}
 chart_detailsText: {{ text.hex }}
 chart_detailsArrow: {{ text.hex }}
 chart_detailsView: {{ mantle.hex }}

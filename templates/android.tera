@@ -191,7 +191,7 @@ chat_inVoiceSeekbar: {{ overlay0.hex }}
 chat_inVoiceSeekbarFill: {{ text.hex }}
 chat_inVoiceSeekbarSelected: {{ overlay0.hex }}
 chat_inlineResultIcon: {{ blue.hex }}
-chat_linkSelectBackground: {{ blue.hex }}33
+chat_linkSelectBackground: {{ blue | mod(opacity=0.2) | hex }}
 chat_lockIcon: {{ base.hex }}
 chat_mediaBroadcast: {{ base.hex }}
 chat_mediaInfoText: {{ base.hex }}
@@ -316,17 +316,17 @@ chat_searchPanelIcons: {{ overlay0.hex }}
 chat_searchPanelText: {{ text.hex }}
 chat_secretChatStatusText: {{ overlay0.hex }}
 chat_secretTimeText: {{ text.hex }}
-chat_secretTimerBackground: {{ base.hex }}CC
+chat_secretTimerBackground: {{ base | mod(opacity=0.8) | hex }}
 chat_secretTimerText: {{ base.hex }}
-chat_selectedBackground: {{ crust.hex }}44
+chat_selectedBackground: {{ crust | mod(opacity=0.266) | hex }}
 chat_sentError: {{ maroon.hex }}
 chat_sentErrorIcon: {{ base.hex }}
 chat_serviceIcon: {{ base.hex }}
 chat_serviceLink: {{ base.hex }}
 chat_serviceText: {{ base.hex }}
 chat_serviceBackground: {{ lavender.hex }}
-chat_shareBackground: {{ overlay0.hex }}66
-chat_shareBackgroundSelected: {{ overlay0.hex }}99
+chat_shareBackground: {{ overlay0 | mod(opacity=0.4) | hex }}
+chat_shareBackgroundSelected: {{ overlay0 | mod(opacity=0.6) | hex }}
 chat_status: {{ green.hex }}
 chat_stickerNameText: {{ base.hex }}
 chat_stickerReplyLine: {{ base.hex }}
@@ -334,7 +334,7 @@ chat_stickerReplyMessageText: {{ base.hex }}
 chat_stickerReplyNameText: {{ base.hex }}
 chat_stickerViaBotNameText: {{ base.hex }}
 chat_stickersHintPanel: {{ base.hex }}
-chat_textSelectBackground: {{ overlay0.hex }}66
+chat_textSelectBackground: {{ overlay0 | mod(opacity=0.4) | hex }}
 chat_topPanelBackground: {{ mantle.hex }}
 chat_topPanelClose: {{ subtext0.hex }}
 chat_topPanelLine: {{ subtext0.hex }}
@@ -432,7 +432,7 @@ dialogInputField: {{ subtext0.hex }}
 dialogInputFieldActivated: {{ blue.hex }}
 dialogLineProgress: {{ blue.hex }}
 dialogLineProgressBackground: {{ overlay0.hex }}
-dialogLinkSelection: {{ blue.hex }}33
+dialogLinkSelection: {{ blue | mod(opacity=0.2) | hex }}
 dialogProgressCircle: {{ blue.hex }}
 dialogRadioBackground: {{ overlay0.hex }}
 dialogRadioBackgroundChecked: {{ blue.hex }}
@@ -460,7 +460,7 @@ dialogTextRed2: {{ maroon.hex }}
 dialogTextRed: {{ maroon.hex }}
 dialogTopBackground: {{ blue.hex }}
 dialog_inlineProgress: {{ subtext0.hex }}
-dialog_inlineProgressBackground: {{ crust.hex }}F6
+dialog_inlineProgressBackground: {{ crust | mod(opacity=0.964) | hex }}
 dialog_liveLocationProgress: {{ blue.hex }}
 divider: #00000000
 emptyListPlaceholder: {{ overlay0.hex }}
@@ -598,7 +598,7 @@ windowBackgroundWhiteGreenText: {{ green.hex }}
 windowBackgroundWhiteHintText: #98A0A7
 windowBackgroundWhiteInputField: #F2F4F5
 windowBackgroundWhiteInputFieldActivated: {{ blue.hex }}
-windowBackgroundWhiteLinkSelection: {{ rosewater.hex }}33
+windowBackgroundWhiteLinkSelection: {{ rosewater | mod(opacity=0.2) | hex }}
 windowBackgroundWhiteLinkText: {{ rosewater.hex }}
 windowBackgroundWhiteRedText2: {{ maroon.hex }}
 windowBackgroundWhiteRedText3: {{ maroon.hex }}

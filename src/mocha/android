@@ -308,7 +308,7 @@ chat_searchPanelIcons: #6c7086
 chat_searchPanelText: #cdd6f4
 chat_secretChatStatusText: #6c7086
 chat_secretTimeText: #cdd6f4
-chat_secretTimerBackground: #1e1e2eCC
+chat_secretTimerBackground: #1e1e2ecc
 chat_secretTimerText: #1e1e2e
 chat_selectedBackground: #11111b44
 chat_sentError: #eba0ac
@@ -452,7 +452,7 @@ dialogTextRed2: #eba0ac
 dialogTextRed: #eba0ac
 dialogTopBackground: #89b4fa
 dialog_inlineProgress: #a6adc8
-dialog_inlineProgressBackground: #11111bF6
+dialog_inlineProgressBackground: #11111bf6
 dialog_liveLocationProgress: #89b4fa
 divider: #00000000
 emptyListPlaceholder: #6c7086
