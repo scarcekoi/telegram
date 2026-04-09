@@ -4,6 +4,7 @@ whiskers:
   matrix:
     - flavor
   filename: "src/{{ flavor.identifier }}/desktop"
+  hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 wallpapers:
   latte: StNc4pYj_FABAAAAOsWwdh_6J6I
   frappe: psvRMp-j_VACAAAA6D6zUK3aWhs
@@ -17,42 +18,42 @@ wallpaper: t.me/bg/{{ wallpapers[flavor.identifier] }} // link to cloud wallpape
 
 // Palette
 
-ctpBase: #{{ base.hex }};
-ctpBaseTransparent: #{{ base.hex }}cc;
-ctpBlue: #{{ blue.hex }};
-ctpCrust: #{{ crust.hex }};
-ctpCrustShadow: #{{ crust.hex }}11;
-ctpCrustTransparent: #{{ crust.hex }}cc;
-ctpFlamingo: #{{ flamingo.hex }};
-ctpGreen: #{{ green.hex }};
-ctpLavender: #{{ lavender.hex }};
-ctpMantle: #{{ mantle.hex }};
-ctpMantleTransparent: #{{ mantle.hex }}cc;
-ctpMaroon: #{{ maroon.hex }};
-ctpMauve: #{{ mauve.hex }};
-ctpOverlay0: #{{ overlay0.hex }};
-ctpOverlay1: #{{ overlay1.hex }};
-ctpOverlay1Transparent: #{{ overlay1.hex }}cc;
-ctpOverlay2: #{{ overlay2.hex }};
-ctpOverlay2Transparent: #{{ overlay2.hex }}cc;
-ctpPeach: #{{ peach.hex }};
-ctpPink: #{{ pink.hex }};
-ctpRed: #{{ red.hex }};
-ctpRosewater: #{{ rosewater.hex }};
-ctpRosewaterTransparent: #{{ rosewater.hex }}cc;
-ctpSapphire: #{{ sapphire.hex }};
-ctpSky: #{{ sky.hex }};
-ctpSubtext0: #{{ subtext0.hex }};
-ctpSubtext1: #{{ subtext1.hex }};
-ctpSurface0: #{{ surface0.hex }};
-ctpSurface0Transparent: #{{ surface0.hex }}cc;
-ctpSurface1: #{{ surface1.hex }};
-ctpSurface1Transparent: #{{ surface1.hex }}cc;
-ctpSurface2: #{{ surface2.hex }};
-ctpSurface2Transparent: #{{ surface2.hex }}cc;
-ctpTeal: #{{ teal.hex }};
-ctpText: #{{ text.hex }};
-ctpYellow: #{{ yellow.hex }};
+ctpBase: {{ base.hex }};
+ctpBaseTransparent: {{ base.hex }}cc;
+ctpBlue: {{ blue.hex }};
+ctpCrust: {{ crust.hex }};
+ctpCrustShadow: {{ crust.hex }}11;
+ctpCrustTransparent: {{ crust.hex }}cc;
+ctpFlamingo: {{ flamingo.hex }};
+ctpGreen: {{ green.hex }};
+ctpLavender: {{ lavender.hex }};
+ctpMantle: {{ mantle.hex }};
+ctpMantleTransparent: {{ mantle.hex }}cc;
+ctpMaroon: {{ maroon.hex }};
+ctpMauve: {{ mauve.hex }};
+ctpOverlay0: {{ overlay0.hex }};
+ctpOverlay1: {{ overlay1.hex }};
+ctpOverlay1Transparent: {{ overlay1.hex }}cc;
+ctpOverlay2: {{ overlay2.hex }};
+ctpOverlay2Transparent: {{ overlay2.hex }}cc;
+ctpPeach: {{ peach.hex }};
+ctpPink: {{ pink.hex }};
+ctpRed: {{ red.hex }};
+ctpRosewater: {{ rosewater.hex }};
+ctpRosewaterTransparent: {{ rosewater.hex }}cc;
+ctpSapphire: {{ sapphire.hex }};
+ctpSky: {{ sky.hex }};
+ctpSubtext0: {{ subtext0.hex }};
+ctpSubtext1: {{ subtext1.hex }};
+ctpSurface0: {{ surface0.hex }};
+ctpSurface0Transparent: {{ surface0.hex }}cc;
+ctpSurface1: {{ surface1.hex }};
+ctpSurface1Transparent: {{ surface1.hex }}cc;
+ctpSurface2: {{ surface2.hex }};
+ctpSurface2Transparent: {{ surface2.hex }}cc;
+ctpTeal: {{ teal.hex }};
+ctpText: {{ text.hex }};
+ctpYellow: {{ yellow.hex }};
 ctpAccent: ctpGreen;
 
 // Theme variables
